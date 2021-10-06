@@ -1,201 +1,203 @@
 <style>
 
-main{
-position:center;
-  margin-bottom: 0;
-            position: fixed;
-            top:40px; 
-            bottom: 50px; 
-            left: 0px; 
-            right: 0; 
-            overflow: auto; 
-            background: black;
-            background-size: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-image: url("db.jpeg");
-        }
-        .portfolio-info{
+    main{
+    position:center;
+      margin-bottom: 0;
+                position: fixed;
+                top:40px; 
+                bottom: 50px; 
+                left: 0px; 
+                right: 0; 
+                overflow: auto; 
+                background: black;
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url("../assets/image/db.jpeg");
+            }
+            .portfolio-info{
+                
+                background-color: gray;
+                color: yellow;
+                height: 40px;
+                text-align: center;
+                width: 250px;
+                margin-bottom: 10px; 
+                border-radius: 20%; 
+            }
+            .text{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 10px;
+    
+    
+            }
             
-            background-color: gray;
-            color: yellow;
-            height: 40px;
-            text-align: center;
-            width: 250px;
-            margin-bottom: 10px; 
-            border-radius: 20%; 
-        }
-        .text{
-            font-family: Arial, Helvetica, sans-serif;
-            margin-top: 10px;
-
-
-        }
-        
-
-        .portfolio-container {
-            display: grid;
-            place-items: center;
-        }
-
-        .portfolio-container img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border:2px solid green;
-        }
-
-        .portfolio-container .name {
-            margin-top: 10px;
-            font-size: 30px;
-            color:green;
-        }
-         fieldset{
-            border-radius: 15%;
-            border: 2px solid gray;
-            background: linear-gradient(red,white);
-         }
-
-        .details{
+    
+            .portfolio-container {
+                display: grid;
+                place-items: center;
+            }
+    
+            .portfolio-container img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border:2px solid green;
+            }
+    
+            .portfolio-container .name {
+                margin-top: 10px;
+                font-size: 30px;
+                color:green;
+            }
+             fieldset{
+                border-radius: 15%;
+                border: 2px solid gray;
+                background: linear-gradient(red,white);
+             }
+    
+            .details{
+                
+                font-size: 18px;
+                font-family: Arial;
+                color: red;
+    
+           }
+           .contact{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 10px;
+                background-color: gray;
+                color: yellow;
+                margin-bottom: 10px; 
+                border-radius: 20%;
+                height: 40px;
+                text-align: center;
+                width: 250px;
+    
+    
+            }
             
-            font-size: 18px;
-            font-family: Arial;
-            color: red;
-
-       }
-       .contact{
-            font-family: Arial, Helvetica, sans-serif;
-            margin-top: 10px;
-            background-color: gray;
-            color: yellow;
-            margin-bottom: 10px; 
-            border-radius: 20%;
-            height: 40px;
+           
+            .fa {  
+                  width: 25px;
+                  padding: 20px;
+                  font-size: 25px;
+                  text-align: center;
+                  text-decoration: none;
+                  margin: 5px 2px;
+                  color: white;
+                  border-radius: 50%; 
+    
+                }
+    
+                .fa:hover {
+                    opacity: 0.7;
+                }
+    
+                .fa-facebook {
+                  background: #3B5998;
+                }
+                .fa-instagram {
+                  background: #8a3ab9;
+                }
+                .fa-github {
+                  background: #000000;
+                }
+                .fa-twitter {
+                  background: #55ACEE;
+                }
+    
+            
+            .gallery-info{
+                background-color: gray;
+                color: yellow;
+                height: 40px;
+                text-align: center;
+                width: 250px;
+                margin-bottom: 10px;
+                margin-top: 40px; 
+                border-radius: 20%; 
+            }
+            .gallery-container img{
+                border:2px solid green;
+                border-radius: 15%; 
+            }
+            .footer{
             text-align: center;
-            width: 250px;
-
-
-        }
-        
-       
-        .fa {  
-			  width: 25px;
-			  padding: 20px;
-			  font-size: 25px;
-			  text-align: center;
-			  text-decoration: none;
-			  margin: 5px 2px;
-			  color: white;
-			  border-radius: 50%; 
-
-			}
-
-			.fa:hover {
-				opacity: 0.7;
-			}
-
-			.fa-facebook {
-			  background: #3B5998;
-			}
-			.fa-instagram {
-			  background: #8a3ab9;
-			}
-			.fa-github {
-			  background: #000000;
-			}
-			.fa-twitter {
-			  background: #55ACEE;
-			}
-
-        
-        .gallery-info{
-            background-color: gray;
-            color: yellow;
-            height: 40px;
-            text-align: center;
-            width: 250px;
-            margin-bottom: 10px;
-            margin-top: 40px; 
-            border-radius: 20%; 
-        }
-        .gallery-container img{
-            border:2px solid green;
-            border-radius: 15%; 
-        }
-        .footer{
-        text-align: center;
-            position: absolute;
-            left: 0;
-            bottom: 1px;
-            width: 100%;
-            height: 50px; 
-            overflow: hidden; 
-            background: linear-gradient(red,white);
-            color: blue;
-            text-shadow: black;
-
-	    }
-</style>
-<main>
-  <center>
-  <div class="portfolio-info"><h2 class="text">MY PORTFOLIO</h2></center>
-  </div>
-<div class="container">
-      <div class="portfolio-container">
-          <img src="me.jpg" 
-              alt="userimg">
-          <div class="name"><fieldset>Reynaldo Brusas Ellaso Jr</fieldset></div>
-          <div class="details">
-
-              <ul style="list-style-type:square;">
-                  <li><b>Age: 26</b></li>
-                  <li><b>Gender: Male</b></li>
-                  <li><b>Course: Bachelor of Science in Information Technology</b></li>
-                  <li><b>Year Level: Second Year</b></li>
-                  <li><b>School: Eastern Visayas State University - Carigara Campus</b></li>
-                  <li><b>Addess: Balud Barugo, Leyte</b></li>
-              </ul>
-          </div>
-      </div>       
-  </div>
-  <center>
-    <h2 class="contact">CONTACT ME:</h2>
-      <a href="https://www.facebook.com/reynaldo.ellaso.71" class="fa fa-facebook"></a>
-     <a href="https://www.instagram.com/@Reyn_Jane08" class="fa fa-instagram"></a>
-  <a href="https://www.fa-github.com/ReynaldoEllasoJr" class="fa fa-github"></a>
-  <a href="https://www.twitter.com/ReynJane08" class="fa fa-twitter"></a>
-  </center>
-<hr border="style: 2px solid  blue;">
-  
-  
-  <div class="container">
-
-      <center>
-  <div class="gallery-info"><h2 class="text">MY GALLERY</h2>
-  </center></div>
-
-  <br>
-  <p><h3 style="text-align: center; color:yellow; font-size: 25px;"><b>" In this section it shows the sets of photo of my artworks, my favorite book for past time,<br>my favorite anime series and my guitar."</b></h3></p>
-
-      <div class="gallery-container" style="display: grid; grid-template-columns: repeat(3, 300px); grid-gap: 20px; width: fit-content; margin: 100px auto; ">
-          <img style="width: 100%; height: 300px" src="draw1.jpg" alt="">
-          <img style="width: 100%; height: 300px" src="draw2.jpg" alt="">
-          <img style="width: 100%; height: 300px" src="draw3.jpg" alt="">
-          <img style="width: 100%; height: 300px" src="wattpad.png" alt="">
-          <img style="width: 100%; height: 300px" src="fairytale.jpeg" alt="">
-          <img style="width: 100%; height: 300px" src="guitar.jpeg" alt="">
-          
-      </div>
-      </div>
-
-
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                width: 100%;
+                height: 50px; 
+                overflow: hidden; 
+                background: linear-gradient(red,white);
+                color: blue;
+                text-shadow: black;
+    
+            }
+    </style>
+    <main>
+        <div style="text-align:center;display:flex;justify-content:center;align-items: center;">
+            <div class="portfolio-info">
+            <h2 class="text">MY PORTFOLIO</h2>
+            </div>
+        </div>
+     <div class="container">
+          <div class="portfolio-container">
+              <img src="../assets/image/me.jpg" 
+                  alt="userimg">
+              <div class="name"><fieldset>Reynaldo Brusas Ellaso Jr</fieldset></div>
+              <div class="details">
+    
+                  <ul style="list-style-type:square;">
+                      <li><b>Age: 26</b></li>
+                      <li><b>Gender: Male</b></li>
+                      <li><b>Course: Bachelor of Science in Information Technology</b></li>
+                      <li><b>Year Level: Second Year</b></li>
+                      <li><b>School: Eastern Visayas State University - Carigara Campus</b></li>
+                      <li><b>Addess: Balud Barugo, Leyte</b></li>
+                  </ul>
+              </div>
+          </div>       
+        </div>
+        <div style="text-align:center;display:flex;justify-content:center;align-items: center;">
+            <h2 class="contact">CONTACT ME:</h2>
+            <a href="https://www.facebook.com/reynaldo.ellaso.71" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/@Reyn_Jane08" class="fa fa-instagram"></a>
+            <a href="https://www.fa-github.com/ReynaldoEllasoJr" class="fa fa-github"></a>
+            <a href="https://www.twitter.com/ReynJane08" class="fa fa-twitter"></a>
+        </div>
+    <hr border="style: 2px solid  blue;">   
       
-
-  </main>
-      <footer class="footer">
-<center>
-<b><i>Design by: Reynaldo B. Ellaso Jr BSIT-3C</i></b>
-<br>
-<b>A.Y. 2021-2022</b>
-</center>
-</footer>
+      
+        <div class="container">
+            <div style="text-align:center;display:flex;justify-content:center;align-items: center;">
+                <div class="gallery-info"><h2 class="text">MY GALLERY</h2></div>
+            </div>
+        </div>
+    
+      <br>
+        <div>
+            <h3 style="text-align: center; color:yellow; font-size: 25px;">
+            <b>" In this section it shows the sets of photo of my artworks, my favorite book for past time,<br>my favorite anime series and my guitar."</b>
+            </h3>
+        </div>
+    
+          <div class="gallery-container" style="display: grid; grid-template-columns: repeat(3, 300px); grid-gap: 20px; width: fit-content; margin: 100px auto; ">
+              <img style="width: 100%; height: 300px" src="../assets/image/draw1.jpg" alt="">
+              <img style="width: 100%; height: 300px" src="../assets/image/draw2.jpg" alt="">
+              <img style="width: 100%; height: 300px" src="../assets/image/draw3.jpg" alt="">
+              <img style="width: 100%; height: 300px" src="../assets/image/wattpad.png" alt="">
+              <img style="width: 100%; height: 300px" src="../assets/image/fairytale.jpeg" alt="">
+              <img style="width: 100%; height: 300px" src="../assets/image/guitar.jpeg" alt="">
+              
+          </div>
+    
+      </main>
+          <footer class="footer">
+    <div style='text-align: center;'>
+        <b><i>Design by: Reynaldo B. Ellaso Jr BSIT-3C</i></b>
+        <br>
+        <b>A.Y. 2021-2022</b>
+        </div>
+    </footer> 
